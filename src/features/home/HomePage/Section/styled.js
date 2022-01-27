@@ -6,8 +6,8 @@ export const Wrapper = styled.div`
     grid-row-gap: 32px;
     padding: 32px;
     background-color: ${({ theme }) => theme.colors.white};
-    box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.colors.shadow},
-                0px -2px 50px 0px ${({ theme }) => theme.colors.secondShadow};
+    box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.colors.grayShadow},
+                0px -2px 50px 0px ${({ theme }) => theme.colors.lightGrayShadow};
     
     @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileWidth}px){
         grid-row-gap: 16px;
