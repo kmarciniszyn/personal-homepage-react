@@ -1,4 +1,5 @@
 import React from "react";
+import Contact from "./Contact";
 import MainSection from "./MainSection";
 import Section from "./Section";
 import { Wrapper } from "./styled";
@@ -22,5 +23,6 @@ export default () => (
             title={"What I want to learn next"}
             content={["TypeScript", "Unit testing", "Node.js"]}
         />
+        <Contact />
     </Wrapper>
 );
