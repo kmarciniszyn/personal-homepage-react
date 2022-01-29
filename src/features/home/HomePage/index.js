@@ -1,9 +1,11 @@
 import React from "react";
+import MainSection from "./MainSection";
 import Section from "./Section";
 import { Wrapper } from "./styled";
 
 export default () => (
     <Wrapper>
+        <MainSection />
         <Section
             title={"My skillset includes"}
             content={["Teamwork", "Trello", "Git", "Responsive Web Design",
@@ -14,7 +16,7 @@ export default () => (
         />
         <Section
             title={"My other skills"}
-            content={["NoSQL - Firebase", "Kotlin basics", "Python basics"]}
+            content={["NoSQL - Firebase"]}
         />
         <Section
             title={"What I want to learn next"}
