@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SpecialText from "../../SpecialText";
+import SpecialText from "../SpecialText";
 import ModeIcon from "./ModeIcon";
 import { Wrapper, CheckboxLabel, HiddenCheckbox, CheckboxContainer } from "./styled";
 

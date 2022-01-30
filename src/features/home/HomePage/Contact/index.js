@@ -1,6 +1,6 @@
 import React from "react";
 import { Header, Text, Title, Wrapper } from "./styled";
-import SpecialText from "../SpecialText";
+import SpecialText from "../../../../common/SpecialText";
 
 export default () => (
     <Wrapper>

@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from "../Button";
 import { Image, ModeWrapper, Title, Wrapper, Text, Header } from './styled';
-import SpecialText from '../SpecialText';
+import SpecialText from '../../../../common/SpecialText';
 import photo from '../../../../km.jpg';
-import Mode from './Mode';
+import Mode from '../../../../common/Mode';
 
 export default () => (
     <Wrapper>
