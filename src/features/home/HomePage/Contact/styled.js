@@ -18,7 +18,7 @@ export const Header = styled.header`
 export const Title = styled.h3`
     font-size: 32px;
     font-weight: 700;
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.textPrimary};
     margin: 0px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileWidth}px){
@@ -28,7 +28,7 @@ export const Title = styled.h3`
 
 export const Text = styled.p`
     font-size: 18px;
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.textPrimary};
     margin: 0px 0px 56px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileWidth}px){

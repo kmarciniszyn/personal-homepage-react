@@ -1,22 +1,25 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import SpecialText from "../SpecialText";
+import { switchDarkMode } from "../themeSlice";
 import ModeIcon from "./ModeIcon";
 import { Wrapper, CheckboxLabel, HiddenCheckbox, CheckboxContainer } from "./styled";
 
 export default () => {
-    const text = "dark mode ";
+    const dispatch = useDispatch();
     const [checked, setChecked] = useState(false);
-    const [modeText, setModeText] = useState(`${text} off`);
+    const [modeText, setModeText] = useState("off");
 
     const onCheckedChanged = ({ target }) => {
         setChecked(target.checked);
-        setModeText(`${text}${checked ? "off" : "on"}`);
+        setModeText(checked ? "off" : "on");
+        dispatch(switchDarkMode());
     };
 
     return (
         <Wrapper>
             <SpecialText
-                content={modeText}
+                content={`dark mode ${modeText}`}
             />
             <CheckboxContainer>
                 <CheckboxLabel

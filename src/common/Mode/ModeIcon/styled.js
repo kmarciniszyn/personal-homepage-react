@@ -6,6 +6,6 @@ export const Wrapper = styled.div`
     & svg {
         width: 16px;
         height: 16px;
-        stroke: ${({ theme }) => theme.colors.white};
+        color: ${({ theme }) => theme.colors.mode.icon};
     }
 `;

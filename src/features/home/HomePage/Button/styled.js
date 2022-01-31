@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-    background-color: ${({ theme }) => theme.colors.blue};
-    color: ${({ theme }) => theme.colors.white};
-    border: 1px solid ${({theme}) => theme.colors.iron};
+    background-color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.button.text};
+    border: 1px solid ${({theme}) => theme.colors.button.border};
     border-radius: 4px;
     padding: 12px 16px;
     font-size: 20px;
@@ -14,6 +14,6 @@ export const Button = styled.button`
     }
 
     &:hover {
-        background-color: ${({theme}) => theme.colors.lightBlue};
+        box-shadow: ${({theme}) => theme.colors.button.hoverShadow};
     }
 `;

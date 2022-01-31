@@ -33,7 +33,7 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.h1`
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.textPrimary};
     font-size: 38px;
     font-weight: 900;
     margin: 0px 0px;
@@ -45,7 +45,6 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
     font-size: 20px;
-    color: ${({theme})=>theme.colors.gray};    
     margin: 0px 0px;
 
     @media (max-width: ${({theme})=>theme.breakpoints.maxMobileWidth}px){

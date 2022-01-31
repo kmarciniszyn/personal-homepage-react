@@ -5,9 +5,8 @@ export const Wrapper = styled.div`
     grid-template-columns: 1fr;
     grid-row-gap: 32px;
     padding: 32px;
-    background-color: ${({ theme }) => theme.colors.white};
-    box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.colors.grayShadow},
-                0px -2px 50px 0px ${({ theme }) => theme.colors.lightGrayShadow};
+    background-color: ${({ theme }) => theme.colors.boxBackground};
+    box-shadow: ${({theme}) => theme.boxShadow};
     
     @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileWidth}px){
         grid-row-gap: 16px;
@@ -16,12 +15,12 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.header`
-    border-bottom: 1px solid ${({ theme }) => theme.colors.lightGray};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.headerLine};
 `;
 
 export const Title = styled.h2`
     font-size: 30px;
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.textPrimary};
     margin: 0px 0px 10px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileWidth}px) {
@@ -44,13 +43,12 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
     font-size: 18px;
-    color: ${({ theme }) => theme.colors.gray};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileWidth}px){
         font-size: 14px;
     }
 
     &::marker {
-        color: ${({ theme }) => theme.colors.blue};
+        color: ${({ theme }) => theme.colors.primary};
     }
 `;
