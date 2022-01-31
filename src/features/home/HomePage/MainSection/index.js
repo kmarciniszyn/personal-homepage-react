@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from "../Button";
-import { Image, ModeWrapper, Title, Wrapper, Text, Header } from './styled';
+import { Image, ModeWrapper, Title, Wrapper, Text } from './styled';
 import SpecialText from '../../../../common/SpecialText';
 import photo from '../../../../km.jpg';
 import Mode from '../../../../common/Mode';
