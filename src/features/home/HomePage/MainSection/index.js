@@ -27,6 +27,10 @@ export default () => (
             Programming is my passion and
             gives me a lot of satisfaction.
         </Text>
-        <LinkButton href={`mailto:${email}`} text={"✉ Hire me"} />
+        <LinkButton
+            href={`mailto:${email}`}
+            text={"✉ Hire me"}
+            title={email}
+        />
     </Wrapper>
 );
