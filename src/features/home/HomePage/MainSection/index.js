@@ -4,6 +4,7 @@ import SpecialText from '../../../../common/SpecialText';
 import photo from '../../../../km.jpg';
 import Mode from '../../../../common/Mode';
 import LinkButton from '../LinkButton';
+import { email } from '../../../../email';
 
 export default () => (
     <Wrapper>
@@ -26,6 +27,6 @@ export default () => (
             Programming is my passion and
             gives me a lot of satisfaction.
         </Text>
-        <LinkButton text={"✉ Hire me"} />
+        <LinkButton href={`mailto:${email}`} text={"✉ Hire me"} />
     </Wrapper>
 );

@@ -8,6 +8,7 @@ export const StyledLinkButton = styled.a`
     padding: 12px 16px;
     font-size: 20px;
     transition: background-color 0.5s;
+    text-decoration: none;
 
     @media (max-width: ${({theme}) => theme.breakpoints.maxMobileWidth}px){
         font-size: 18px;
