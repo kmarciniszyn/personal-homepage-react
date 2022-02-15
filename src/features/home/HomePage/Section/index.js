@@ -9,7 +9,9 @@ export default ({ title, content }) => (
         <List>
             {
                 content.map(item =>
-                    <ListItem>{item}</ListItem>)
+                    <ListItem key={item}>
+                        {item}
+                    </ListItem>)
             }
         </List>
     </Wrapper>
