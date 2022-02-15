@@ -2,6 +2,7 @@ import React from "react";
 import LinkButton from "../../../LinkButton";
 import AttentionIcon from './AttentionIcon';
 import { Wrapper, Header, Paragraph } from "./styled";
+import { userName } from "../../../../../../githubUserName";
 
 export default () => (
     <Wrapper>
@@ -13,6 +14,7 @@ export default () => (
         </Paragraph>
         <LinkButton
             text={"Go to Github"}
+            href={`https://github.com/${userName}`}
         />
     </Wrapper>
 );
