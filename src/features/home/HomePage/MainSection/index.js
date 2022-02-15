@@ -1,9 +1,9 @@
 import React from 'react';
-import Button from "../Button";
 import { Image, ModeWrapper, Title, Wrapper, Text } from './styled';
 import SpecialText from '../../../../common/SpecialText';
 import photo from '../../../../km.jpg';
 import Mode from '../../../../common/Mode';
+import LinkButton from '../LinkButton';
 
 export default () => (
     <Wrapper>
@@ -26,6 +26,6 @@ export default () => (
             Programming is my passion and
             gives me a lot of satisfaction.
         </Text>
-        <Button text={"✉ Hire me"} />
+        <LinkButton text={"✉ Hire me"} />
     </Wrapper>
 );

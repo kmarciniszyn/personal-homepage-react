@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const StyledLinkButton = styled.a`
     background-color: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.button.text};
-    border: 1px solid ${({theme}) => theme.colors.button.border};
+    color: ${({ theme }) => theme.colors.linkButton.text};
+    border: 1px solid ${({theme}) => theme.colors.linkButton.border};
     border-radius: 4px;
     padding: 12px 16px;
     font-size: 20px;
@@ -14,6 +14,6 @@ export const Button = styled.button`
     }
 
     &:hover {
-        box-shadow: ${({theme}) => theme.colors.button.hoverShadow};
+        box-shadow: ${({theme}) => theme.colors.linkButton.hoverShadow};
     }
 `;

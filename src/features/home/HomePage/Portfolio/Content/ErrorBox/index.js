@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../../Button";
+import LinkButton from "../../../LinkButton";
 import AttentionIcon from './AttentionIcon';
 import { Wrapper, Header, Paragraph } from "./styled";
 
@@ -11,7 +11,7 @@ export default () => (
             Sorry, failed to load Github projects.<br />
             You can check them directly on Github.
         </Paragraph>
-        <Button
+        <LinkButton
             text={"Go to Github"}
         />
     </Wrapper>

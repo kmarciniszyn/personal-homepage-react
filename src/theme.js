@@ -43,7 +43,7 @@ export const lightTheme = {
             icon: colors.white,
             iconBackground: colors.gray,
         },
-        button: {
+        linkButton: {
             text: colors.white,
             border: colors.iron,
             hoverShadow: `2px -2px 0px ${colors.skyBlue},
@@ -76,7 +76,7 @@ export const darkTheme = {
             icon: colors.black,
             iconBackground: colors.white,
         },
-        button: {
+        linkButton: {
             text: colors.white,
             border: colors.iron,
             hoverShadow: `2px -2px 0px ${colors.grayBlue},
