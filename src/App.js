@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'styled-components';
+import { Normalize } from 'styled-normalize';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyle } from './globalStyle';
 import HomePage from "./features/home/HomePage";
@@ -10,6 +11,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+      <Normalize />
       <GlobalStyle />
       <HomePage />
     </ThemeProvider>
