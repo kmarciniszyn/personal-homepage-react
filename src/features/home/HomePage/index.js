@@ -4,25 +4,22 @@ import MainSection from "./MainSection";
 import Portfolio from "./Portfolio";
 import Section from "./Section";
 import { Wrapper } from "./styled";
+import { skills, otherSkills, learnNext } from "./skillsData";
 
 export default () => (
     <Wrapper>
         <MainSection />
         <Section
             title={"My skillset includes"}
-            content={["Teamwork", "Trello", "Git", "Responsive Web Design",
-                "Immutability", "Markdown", "Working with API (fetch, axios)",
-                "Promises, Async/Await", "React", "React Hooks", "React Router",
-                "Redux (Toolkit)", "Redux-Saga", "Styled components",
-                "CSS BEM convention", "CSS Grid", "CSS Flexbos", "Error handling"]}
+            content={skills}
         />
         <Section
             title={"My other skills"}
-            content={["NoSQL - Firebase"]}
+            content={otherSkills}
         />
         <Section
             title={"What I want to learn next"}
-            content={["TypeScript", "Unit testing", "Node.js"]}
+            content={learnNext}
         />
         <Portfolio />
         <Contact />
