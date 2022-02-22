@@ -37,6 +37,7 @@ export const Title = styled.h1`
     font-size: 38px;
     font-weight: 900;
     margin: 0px 0px;
+    transition: color 0.5s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileWidth}px){
         font-size: 22px;

@@ -21,7 +21,7 @@ export const Card = styled.li`
     background-color: ${({ theme }) => theme.colors.boxBackground};
     box-shadow: ${({ theme }) => theme.boxShadow};
     border: 6px solid ${({ theme }) => theme.colors.card.border};
-    transition: border 0.5s;
+    transition: 0.5s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileWidth}px){
         grid-row-gap: 12px;
@@ -38,6 +38,7 @@ export const Title = styled.h3`
     font-size: 24px;
     font-weight: 700; 
     margin: 0px;
+    transition: 0.5s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileWidth}px){
         font-size: 16px;    
@@ -81,6 +82,7 @@ export const Link = styled.a`
     color: ${({ theme }) => theme.colors.primary};
     text-decoration: none;
     border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
+    transition: 0.5s;
 
     &:hover {
         filter: brightness(120%);

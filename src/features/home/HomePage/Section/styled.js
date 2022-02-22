@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
     padding: 32px;
     background-color: ${({ theme }) => theme.colors.boxBackground};
     box-shadow: ${({theme}) => theme.boxShadow};
+    transition: background-color 0.5s;
     
     @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileWidth}px){
         grid-row-gap: 16px;
