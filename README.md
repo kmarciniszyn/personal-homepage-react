@@ -2,7 +2,9 @@
 
 Welcome to my personal home page. I'm glad you decided to visit my site.
 
-From this page you can learn more about my programming skills and what I want to learn in the future. I also left a contact for me there.
+From this page you can learn more about my programming skills and what I want to learn in the future. I also left a contact for me there. 
+
+I added a theme change for dark mode lovers. You can find the mode switch at the top of the page.
 
 ## Technologies
 - React
@@ -14,7 +16,7 @@ From this page you can learn more about my programming skills and what I want to
 - Hooks
 - Axios
 
-# Demo
+## Demo
 You can try this app [here](https://kmarciniszyn.github.io/personal-homepage-react/)
 
 ## Available Scripts
